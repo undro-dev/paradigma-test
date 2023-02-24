@@ -1,0 +1,9 @@
+.scroll {
+	width: 7.292vw;
+}
+
+@media (max-width: 768px) {
+	.scroll {
+		display: none;
+	}
+}

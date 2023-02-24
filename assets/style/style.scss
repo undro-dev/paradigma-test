@@ -1,0 +1,35 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100vh;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.main {
+	display: flex;
+	flex-grow: 1;
+}
+@media (max-width: 768px) {
+	body {
+		height: max-content;
+	}
+	.wrapper {
+		position: relative;
+	}
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap");
+@import "./variables";
+@import "./header";
+@import "./popup-map";
+@import "./popup-phone";
+@import "./scroll";
+@import "./content";
+@import "./header-info";
+@import "./header-nav";

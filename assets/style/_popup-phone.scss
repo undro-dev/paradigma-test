@@ -1,0 +1,119 @@
+.popup-phone {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(22, 44, 78, 0.6);
+}
+.popup-phone-content {
+	display: flex;
+	flex-direction: column;
+	width: 26.042vw;
+	position: relative;
+
+	background-color: black;
+	padding: 2.344vw 3.542vw 3.906vw 3.594vw;
+
+	font-family: "Manrope", sans-serif;
+	color: #ffffff;
+	text-align: center;
+
+	&__title {
+		font-weight: 500;
+		font-size: 1.667vw;
+		line-height: 2.292vw;
+		margin-bottom: 0.833vw;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 0.938vw;
+		line-height: 1.458vw;
+		margin-bottom: 1.771vw;
+	}
+}
+
+.popup-content-form {
+	display: flex;
+	flex-direction: column;
+	&__tooltip {
+		font-weight: 400;
+		font-size: 0.729vw;
+		line-height: 0.99vw;
+		margin-bottom: 0.625vw;
+	}
+	&__input {
+		padding: 1.458vw 2.448vw;
+		background: #fafafa;
+		box-shadow: inset 0px 0px 21px rgba(255, 255, 255, 0.4);
+		border-radius: 3.802vw;
+		margin-bottom: 1.302vw;
+		font-size: 0.938vw;
+		line-height: 1.25vw;
+		letter-spacing: 0.03em;
+		color: #b0b0b1;
+		border: none;
+	}
+	&__btn {
+		background: $red;
+		border-radius: 500px;
+		height: 4.427vw;
+
+		font-weight: 600;
+		font-size: 0.833vw;
+		line-height: 1.25vw;
+		letter-spacing: 0.04em;
+
+		color: #ffffff;
+		margin-bottom: 1.302vw;
+	}
+
+	&__label {
+		display: flex;
+		column-gap: 0.729vw;
+		text-align: start;
+	}
+	&__close {
+		top: 1.823vw;
+		right: 1.927vw;
+		position: absolute;
+		background-image: url("../icons/close-icon.svg");
+		background-size: cover;
+		width: 1.042vw;
+		height: 1.042vw;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+}
+
+.popup-content-form__label input {
+	display: none;
+}
+.label-checkbox {
+	display: block;
+	flex-shrink: 0;
+	height: 1.042vw;
+	width: 1.042vw;
+	border-radius: 5px;
+	position: relative;
+	background-color: $red;
+}
+[type="checkbox"]:checked + .label-checkbox:before {
+	content: "\2714";
+	position: absolute;
+	top: 0;
+	left: 3px;
+	font-size: 0.833vw;
+	color: white;
+}
+
+.label-text {
+	font-size: 0.729vw;
+	line-height: 0.99vw;
+	span {
+		color: $red;
+	}
+}

@@ -1,0 +1,50 @@
+.header-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.625vw;
+	padding-top: 1.146vw;
+	&__item {
+		list-style: none;
+	}
+	&__link {
+		font-weight: 600;
+		text-transform: uppercase;
+		text-decoration: none;
+		line-height: 0.833vw;
+		color: $black;
+		letter-spacing: 0.15em;
+	}
+}
+
+[data-tooltip] {
+	position: relative;
+}
+[data-tooltip]::after {
+	transition: all 0.4s;
+}
+[data-tooltip]:hover::after {
+	content: "";
+	position: absolute;
+	width: 20vw;
+	height: 20vw;
+	background-image: url("../img/tooltip.png");
+	background-size: cover;
+	top: 2.1em;
+	left: 1em;
+	z-index: 1;
+}
+@media (max-width: 768px) {
+	.header-nav {
+		flex-direction: column;
+		align-items: start;
+		font-size: 1rem;
+		padding-top: 1.9375rem;
+		row-gap: 1.75rem;
+		line-height: 1.375rem;
+
+		&__item:first-child {
+			display: none;
+		}
+	}
+}
